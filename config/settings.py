@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "corsheaders",
     "rest_framework",
+    "usuario", # inclua essa linha
     "livraria",
 ]
 
@@ -95,6 +96,8 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
+
+AUTH_USER_MODEL = "usuario.Usuario"
 
 AUTH_PASSWORD_VALIDATORS = [
     {
